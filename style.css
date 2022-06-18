@@ -1,0 +1,59 @@
+*{
+    margin: o;
+    padding: o;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+    background-color: yellow;
+    padding: 0;
+    margin: o;
+    border: 0;
+}
+ul li{
+    display: inline;
+    padding: 0;
+    margin: o;
+    border: 0;
+}
+ul li a{
+    color: brown;
+    display: inline-block;
+    background-color: yellow;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: .8s linear;
+}
+ul li a:hover{
+    background-color: black;
+}
+div{
+    width: 200px;
+    height: 350px;
+    position: relative;
+    background-color: rgb(227, 252, 9);
+    animation-name: loder;
+    animation-duration: 5s;
+    animation-iteration-count: 3;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+}
+h1{
+    text-align: center;
+}
+div:hover{
+    animation-play-state: paused;
+}
+@keyframes loder{
+    0%{
+        left: 0;
+        background-color: blue;
+    }
+    100%{
+        left: 300px;
+        background-color: black;
+    }
+}                        
